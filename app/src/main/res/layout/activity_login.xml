@@ -32,14 +32,14 @@
         android:layout_height="wrap_content">
 
         <EditText
-            android:id="@+id/edUserName"
+            android:id="@+id/edContactNumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:drawableStart="@drawable/blackuser"
             android:ems="10"
             android:drawablePadding="18dp"
             android:textSize="20sp"
-            android:hint="User Name "
+            android:hint="Contact Name "
             android:inputType="text" />
 
     </com.google.android.material.textfield.TextInputLayout>

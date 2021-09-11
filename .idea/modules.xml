@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AndroidProject25B.iml" filepath="$PROJECT_DIR$/.idea/modules/AndroidProject25B.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/AndroidProject25B.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/AndroidProject25B.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/laptoprepairwearos/AndroidProject25B.laptoprepairwearos.iml" filepath="$PROJECT_DIR$/.idea/modules/laptoprepairwearos/AndroidProject25B.laptoprepairwearos.iml" />
+    </modules>
+  </component>
+</project>

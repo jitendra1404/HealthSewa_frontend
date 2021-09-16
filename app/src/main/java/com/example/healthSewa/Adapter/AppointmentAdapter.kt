@@ -27,22 +27,26 @@ class AppointmentAdapter (
     ): RecyclerView.Adapter<AppointmentAdapter.AppointmentViewHolder>() {
 
     class AppointmentViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        //        val profile: ImageView
-        val device_name: TextView
-        val device_model: TextView
-        val appointment_date: TextView
-        val location: TextView
-        val issue: TextView
+
+        val healthissue : TextView
+        val occupation: TextView
+        val consultanthour: TextView
+        val date: TextView
+        val behaviors: TextView
+        val statement: TextView
+        val age: TextView
         val update: ImageButton
         val delete: ImageButton
 
         init {
-//            profile=view.findViewById(R.id.profile)
-            device_name = view.findViewById(R.id.ttvdevicename)
-            device_model = view.findViewById(R.id.ttvdevicemodel)
-            appointment_date = view.findViewById(R.id.ttvappointmentdate)
-            location = view.findViewById(R.id.ttvlocation)
-            issue = view.findViewById(R.id.ttvissue)
+
+            healthissue = view.findViewById(R.id.tvhealthissue)
+            occupation = view.findViewById(R.id.tvoccupation)
+            consultanthour= view.findViewById(R.id.tvconsultanthour)
+            date = view.findViewById(R.id.tvdate)
+            behaviors = view.findViewById(R.id.tvbehaviors)
+            statement = view.findViewById(R.id.tvstatement)
+            age = view.findViewById(R.id.tvage)
             update = view.findViewById(R.id.btnupdate)
             delete = view.findViewById(R.id.btndelete)
         }
@@ -56,11 +60,13 @@ class AppointmentAdapter (
 
     override fun onBindViewHolder(holder: AppointmentViewHolder, position: Int) {
         val appointment = lstAppointment[position]
-        holder.device_name.text = appointment.weight
-        holder.device_model.text = appointment.age
-        holder.appointment_date.text = appointment.date
-        holder.location.text = appointment.sex
-        holder.issue.text = appointment.statement
+        holder.healthissue.text = appointment.HealthIssue
+        holder.occupation.text = appointment.Occupation
+        holder.consultanthour.text = appointment.ConsultantHour
+        holder.date.text = appointment.Date
+        holder.age.text = appointment.Age
+        holder.behaviors.text = appointment.Behaviors
+        holder.statement.text = appointment.Statement
 
         holder.update.setOnClickListener {
             val intent = Intent(context, UpdateAppointmentActivity::class.java)
@@ -70,8 +76,8 @@ class AppointmentAdapter (
 
         holder.delete.setOnClickListener {
             val builder = AlertDialog.Builder(context)
-            builder.setTitle("Delete ${appointment.healthissue}")
-            builder.setMessage("Are you sure do you want to delete ${appointment.healthissue} ??")
+            builder.setTitle("Delete ${appointment.HealthIssue}")
+            builder.setMessage("Are you sure do you want to delete ${appointment.HealthIssue} ??")
             builder.setIcon(android.R.drawable.ic_dialog_alert)
             builder.setPositiveButton("Yes") { _, _ ->
                 deleteAppointment(appointment)
@@ -91,7 +97,7 @@ class AppointmentAdapter (
             withContext(Dispatchers.Main) {
                 Toast.makeText(
                     context,
-                    "${appointment.healthissue} deleted successfully",
+                    "${appointment.HealthIssue} deleted successfully",
                     Toast.LENGTH_SHORT
                 ).show()
             }

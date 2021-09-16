@@ -16,18 +16,18 @@ import java.lang.Exception
 
 class AddReviewActivity : AppCompatActivity() {
 
-    private lateinit var etFeedbackTitle: EditText
-    private lateinit var etFeedbackDescription: EditText
-    private lateinit var etCustomerName: EditText
+    private lateinit var etReportTitle: EditText
+    private lateinit var etReportDescription: EditText
+    private lateinit var etSpecialistName: EditText
     private lateinit var btnAddReview: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_review)
 
-        etCustomerName=findViewById(R.id.etCustomerName)
-        etFeedbackTitle=findViewById(R.id.etFeedbackTitle)
-        etFeedbackDescription=findViewById(R.id.etFeedbackDescription)
+        etReportTitle=findViewById(R.id.etreporttile)
+        etReportDescription=findViewById(R.id.etreportdescription)
+        etSpecialistName=findViewById(R.id.etSpecialistName)
         btnAddReview=findViewById(R.id.btnAddReview)
 
         btnAddReview.setOnClickListener {
@@ -36,14 +36,14 @@ class AddReviewActivity : AppCompatActivity() {
     }
 
     private fun addReview() {
-        val FeedbackTitle = etFeedbackTitle.text.toString()
-        val FeedbackDescription = etFeedbackDescription.text.toString()
-        val CustomerName = etCustomerName.text.toString()
+        val reporttitle = etReportTitle.text.toString()
+        val reportdescription = etReportDescription.text.toString()
+        val specialistname = etSpecialistName.text.toString()
 
         val review = Review(
-            report_title =   FeedbackTitle,
-            report_description = FeedbackDescription,
-            customer_name = CustomerName
+            Report_title =   reporttitle,
+            Report_description = reportdescription,
+            Specialist_name = specialistname
         )
         CoroutineScope(Dispatchers.IO).launch {
             try {

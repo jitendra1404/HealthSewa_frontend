@@ -10,9 +10,9 @@ import androidx.room.PrimaryKey
 data class Review (
 
 @ColumnInfo(name="_id") val _id:String? = null,
-@ColumnInfo(name="report_title") val report_title: String? = null,
-@ColumnInfo(name = "report_description") val report_description: String? = null,
-@ColumnInfo(name = "customer_name") val  customer_name: String? = null,
+@ColumnInfo(name="Report_title") val Report_title: String? = null,
+@ColumnInfo(name = "Report_description") val Report_description: String? = null,
+@ColumnInfo(name = "Specialist_name") val  Specialist_name: String? = null,
 
 ) : Parcelable {
     @PrimaryKey(autoGenerate = true)
@@ -29,9 +29,9 @@ data class Review (
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeString(_id)
-        parcel.writeString(report_title)
-        parcel.writeString(report_description)
-        parcel.writeString(customer_name)
+        parcel.writeString(Report_title)
+        parcel.writeString(Report_description)
+        parcel.writeString(Specialist_name)
         parcel.writeInt(id)
     }
 

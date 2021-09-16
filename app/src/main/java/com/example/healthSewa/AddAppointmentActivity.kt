@@ -19,22 +19,26 @@ class AddAppointmentActivity : AppCompatActivity()
 //    private lateinit var sensorManager:SensorManager
 //    private lateinit var LightSensor:Sensor
 
-    private lateinit var etdevicename: EditText
-    private lateinit var etdevicemodel: EditText
-    private lateinit var etappointmentdate: EditText
-    private lateinit var etlocation: EditText
-    private lateinit var etissue: EditText
+    private lateinit var ethealthissue: EditText
+    private lateinit var etoccupation: EditText
+    private lateinit var etdate: EditText
+    private lateinit var etage: EditText
+    private lateinit var etconsultanthour: EditText
+    private lateinit var etbehaviors: EditText
+    private lateinit var etstatement: EditText
     private lateinit var btnsubmit: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_appointment)
 
-        etdevicename=findViewById(R.id.etdevicename)
-        etdevicemodel=findViewById(R.id.etdevicemodel)
-        etappointmentdate=findViewById(R.id.etappointmentdate)
-        etlocation=findViewById(R.id.etlocation)
-        etissue=findViewById(R.id.etissue)
+        ethealthissue=findViewById(R.id.ethealthissue)
+        etoccupation=findViewById(R.id.etoccupation)
+        etdate=findViewById(R.id.etdate)
+        etage=findViewById(R.id.etage)
+        etconsultanthour=findViewById(R.id.etconsultanthour)
+        etbehaviors=findViewById(R.id.etbehaviors)
+        etstatement=findViewById(R.id.etstatement)
         btnsubmit=findViewById(R.id.btnsubmit)
 
 //        sensorManager=getSystemService(Context.SENSOR_SERVICE)as SensorManager
@@ -47,18 +51,22 @@ class AddAppointmentActivity : AppCompatActivity()
     }
 
     private fun addAppointment() {
-        val devicename = etdevicename.text.toString()
-        val devicemodel = etdevicemodel.text.toString()
-        val appointmentdate = etappointmentdate.text.toString()
-        val location = etlocation.text.toString()
-        val issue= etissue.text.toString()
+        val healthissue = ethealthissue.text.toString()
+        val occupation = etoccupation.text.toString()
+        val date = etdate.text.toString()
+        val age = etage.text.toString()
+        val consultanthour = etconsultanthour.text.toString()
+        val behaviors= etbehaviors.text.toString()
+        val statement= etstatement.text.toString()
 
         val appointment = Appointment(
-            weight = devicename,
-            age = devicemodel,
-            healthissue = appointmentdate,
-            date= location,
-            status= issue
+            HealthIssue = healthissue,
+            Occupation = occupation,
+            Date = date,
+            Age= age,
+            ConsultantHour = consultanthour,
+            Behaviors = behaviors,
+            Statement = statement
         )
         CoroutineScope(Dispatchers.IO).launch {
             try {

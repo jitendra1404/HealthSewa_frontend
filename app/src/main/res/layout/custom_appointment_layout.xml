@@ -4,71 +4,92 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="130dp"
-    android:layout_margin="10dp"
+    android:layout_height="180dp"
+    android:layout_margin="4dp"
     android:background="#0B82A8"
     android:padding="10dp">
 
     <TextView
-        android:id="@+id/ttvdevicename"
+        android:id="@+id/tvhealthissue"
         android:layout_width="130dp"
-        android:layout_height="28dp"
-        android:layout_marginStart="16dp"
+        android:layout_height="34dp"
         android:layout_marginTop="4dp"
-        android:text="Device Name"
+        android:text="Health Issue"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/ttvissue"
+        app:layout_constraintEnd_toStartOf="@+id/tvage"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/ttvdevicemodel"
-        android:layout_width="130dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
-        android:textStyle="bold"
-        android:text="Devive Model"
-        app:layout_constraintBottom_toTopOf="@+id/ttvappointmentdate"
-        app:layout_constraintEnd_toStartOf="@+id/ttvlocation"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ttvdevicename" />
 
     <TextView
-        android:id="@+id/ttvappointmentdate"
+        android:id="@+id/tvoccupation"
+        android:layout_width="130dp"
+        android:layout_height="34dp"
+        android:text="Occupation"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvdate"
+        app:layout_constraintEnd_toStartOf="@+id/tvconsultanthour"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvhealthissue"
+        app:layout_constraintVertical_bias="0.305" />
+
+    <TextView
+        android:id="@+id/tvconsultanthour"
+        android:layout_width="120dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:text="ConsultantHour"
+        app:layout_constraintStart_toStartOf="@+id/tvage"
+        app:layout_constraintTop_toBottomOf="@+id/tvage" />
+
+    <TextView
+        android:id="@+id/tvdate"
+        android:layout_width="120dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:text="Date"
+        app:layout_constraintStart_toStartOf="@+id/tvage"
+        app:layout_constraintTop_toBottomOf="@+id/tvconsultanthour" />
+
+
+    <TextView
+        android:id="@+id/tvbehaviors"
         android:layout_width="128dp"
         android:layout_height="34dp"
         android:layout_marginTop="8dp"
+        android:text="Behaviors"
         android:textStyle="bold"
-        android:text="Date"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/ttvlocation"
-        app:layout_constraintHorizontal_bias="0.676"
+        app:layout_constraintEnd_toStartOf="@+id/tvdate"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ttvdevicemodel" />
+        app:layout_constraintTop_toBottomOf="@+id/tvoccupation" />
 
     <TextView
-        android:id="@+id/ttvlocation"
-        android:layout_width="120dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="16dp"
+        android:id="@+id/tvstatement"
+        android:layout_width="128dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="8dp"
+        android:text="Statement"
         android:textStyle="bold"
-        android:text="Location"
-        app:layout_constraintStart_toStartOf="@+id/ttvissue"
-        app:layout_constraintTop_toBottomOf="@+id/ttvissue" />
+        app:layout_constraintEnd_toStartOf="@id/tvdate"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvbehaviors" />
 
     <TextView
-        android:id="@+id/ttvissue"
+        android:id="@+id/tvage"
         android:layout_width="116dp"
-        android:layout_height="32dp"
-        android:text="Issues"
+        android:layout_height="34dp"
+        android:text="Age"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.205"
-        app:layout_constraintStart_toEndOf="@+id/ttvdevicemodel"
+        app:layout_constraintStart_toEndOf="@+id/tvoccupation"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.05" />
 
@@ -77,21 +98,19 @@
         android:layout_width="47dp"
         android:layout_height="46dp"
         android:scaleType="fitXY"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnupdate"
         app:layout_constraintVertical_bias="0.515"
-        app:srcCompat="@drawable/delete" />
+        app:srcCompat="@drawable/deletetap" />
 
     <ImageButton
         android:id="@+id/btnupdate"
-        android:layout_width="51dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="48dp"
+        android:layout_height="45dp"
         android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/update" />
+        app:srcCompat="@drawable/updated" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

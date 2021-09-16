@@ -8,12 +8,9 @@ object ServiceBuilder {
 
 //    private const val BASE_URL=  "http://localhost:90/"
 
-
 //    private const val BASE_URL=  "http://10.0.2.2:90/"
-
    private const val BASE_URL=  "http://192.168.88.63:90/"
-
- //   private const val BASE_URL=  "http://172.25.0.77:90/"
+//    private const val BASE_URL=  "http://172.26.0.66:90/"
 
 
     var token :String?=null

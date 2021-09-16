@@ -13,7 +13,7 @@ class DashboardActivity : AppCompatActivity() {
     private lateinit var appointment: Button
     private lateinit var review: Button
     private lateinit var about: Button
-//    private lateinit var product:Button
+
 
 
     private lateinit var googlemap: AppCompatImageButton
@@ -26,7 +26,7 @@ class DashboardActivity : AppCompatActivity() {
         appointment = findViewById(R.id.btnappointment)
         review = findViewById(R.id.btnreview)
         about = findViewById(R.id.btnabout)
-//        product=findViewById(R.id.btnproduct)
+
 
         dashboard.setOnClickListener {
             supportFragmentManager.beginTransaction().apply {
@@ -58,15 +58,7 @@ class DashboardActivity : AppCompatActivity() {
             }
         }
 
-//        product.setOnClickListener {
-//            supportFragmentManager.beginTransaction().apply {
-//                replace(R.id.linearcontainer,ProductActivity())
-//                addToBackStack(null)
-//                commit()
-//            }
-//        }
-//
-//    }
+
     }
 
 }

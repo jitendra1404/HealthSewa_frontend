@@ -5,9 +5,19 @@
       <map>
         <entry key="..\:/Users/sahji/health care/HealthSewa_frontend/app/src/main/res/layout/activity_add_appointment.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/sahji/health care/HealthSewa_frontend/app/src/main/res/layout/activity_add_review.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/sahji/health care/HealthSewa_frontend/app/src/main/res/layout/activity_dashboard.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/sahji/health care/HealthSewa_frontend/app/src/main/res/layout/activity_login.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/sahji/health care/HealthSewa_frontend/app/src/main/res/layout/activity_maps.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/sahji/health care/HealthSewa_frontend/app/src/main/res/layout/activity_registration.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/sahji/health care/HealthSewa_frontend/app/src/main/res/layout/activity_splash.xml" value="0.11822916666666666" />
+        <entry key="..\:/Users/sahji/health care/HealthSewa_frontend/app/src/main/res/layout/activity_tab.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/sahji/health care/HealthSewa_frontend/app/src/main/res/layout/activity_update_appointment.xml" value="0.21532846715328466" />
+        <entry key="..\:/Users/sahji/health care/HealthSewa_frontend/app/src/main/res/layout/custom_appointment_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/sahji/health care/HealthSewa_frontend/app/src/main/res/layout/custom_review_layout.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/sahji/health care/HealthSewa_frontend/app/src/main/res/layout/fragment_about_activity.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/sahji/health care/HealthSewa_frontend/app/src/main/res/layout/fragment_appointment_activity.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/sahji/health care/HealthSewa_frontend/app/src/main/res/layout/fragment_dashboard_activity.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/sahji/health care/HealthSewa_frontend/app/src/main/res/layout/fragment_review_activity.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>

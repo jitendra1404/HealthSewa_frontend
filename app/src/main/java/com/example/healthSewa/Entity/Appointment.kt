@@ -9,14 +9,14 @@ import androidx.room.PrimaryKey
 @Entity
 data class Appointment (
     @ColumnInfo(name="_id") val _id:String? = null,
-    @ColumnInfo(name="weight") val weight: String? = null,
-    @ColumnInfo(name = "age") val age: String? = null,
-    @ColumnInfo(name = "date") val date: String? = null,
-    @ColumnInfo(name = "healthissue") val healthissue: String? = null,
-    @ColumnInfo(name = "status") val status: String? = null,
-    @ColumnInfo(name = "occupation") val occupation: String? = null,
-    @ColumnInfo(name = "statement") val statement: String? = null,
-    @ColumnInfo(name = "gender") val sex: String? = null,
+    @ColumnInfo(name="HealthIssue") val HealthIssue: String? = null,
+    @ColumnInfo(name = "Occupation") val Occupation: String? = null,
+    @ColumnInfo(name = "Behaviors") val Behaviors: String? = null,
+    @ColumnInfo(name = "Date") val Date: String? = null,
+    @ColumnInfo(name = "Age") val Age: String? = null,
+    @ColumnInfo(name = "ConsultantHour") val ConsultantHour: String? = null,
+    @ColumnInfo(name = "Statement") val Statement: String? = null,
+
 ) :Parcelable {
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name ="id") var id:Int=0
@@ -36,13 +36,13 @@ data class Appointment (
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeString(_id)
-        parcel.writeString(weight)
-        parcel.writeString(age)
-        parcel.writeString(date)
-        parcel.writeString(healthissue)
-        parcel.writeString(status)
-        parcel.writeString(occupation)
-        parcel.writeString(statement)
+        parcel.writeString(HealthIssue)
+        parcel.writeString(Occupation)
+        parcel.writeString(Behaviors)
+        parcel.writeString(Date)
+        parcel.writeString(Age)
+        parcel.writeString(ConsultantHour)
+        parcel.writeString(Statement)
         parcel.writeInt(id)
     }
 

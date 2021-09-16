@@ -14,33 +14,34 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="65sp"
-            android:text="𝐔𝐬𝐞𝐫 𝐀𝐩𝐩𝐨𝐢𝐧𝐭𝐦𝐞𝐧𝐭"
-            android:textAlignment="center"
-            android:textSize="40sp"
+            android:text="𝐀𝐩𝐩𝐨𝐢𝐧𝐭𝐦𝐞𝐧𝐭"
+           android:layout_gravity="center"
+            android:drawableLeft="@drawable/appointm"
+            android:textSize="30sp"
             android:textColor="@color/black"
             android:layout_marginHorizontal="15dp"
-            android:layout_marginTop="15dp"/>
+            android:layout_marginTop="8dp"/>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="10dp"
             app:boxStrokeColor="@color/black"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_marginHorizontal="15dp"
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/etdevicename"
+                android:id="@+id/ethealthissue"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:drawablePadding="18dp"
                 android:textSize="20sp"
                 android:inputType="text"
-                android:drawableStart="@drawable/name"
-                android:hint="Device Name" />
+                android:drawableRight="@drawable/issue"
+                android:hint="Health Issues" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -52,15 +53,15 @@
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/etdevicemodel"
+                android:id="@+id/etoccupation"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:drawablePadding="18dp"
                 android:textSize="20sp"
                 android:inputType="textEmailAddress"
-                android:hint="Model Name"
-                android:drawableLeft="@drawable/model" />
+                android:hint="Occupation"
+                android:drawableRight="@drawable/occupation" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -72,15 +73,15 @@
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/etappointmentdate"
+                android:id="@+id/etdate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:drawablePadding="18dp"
                 android:textSize="20sp"
-                android:drawableStart="@drawable/date"
+                android:drawableRight="@drawable/schedule"
                 android:inputType="datetime"
-                android:hint="Date " />
+                android:hint="Date" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -91,14 +92,50 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_height="wrap_content">
             <EditText
-                android:id="@+id/etlocation"
+                android:id="@+id/etage"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:drawablePadding="18dp"
                 android:textSize="20sp"
-                android:drawableStart="@drawable/location"
-                android:hint="   Location " />
+                android:drawableRight="@drawable/growing"
+                android:hint="Age" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            app:boxStrokeColor="@color/black"
+            android:layout_marginHorizontal="15dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/etconsultanthour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:drawablePadding="18dp"
+                android:textSize="20sp"
+                android:drawableRight="@drawable/clock"
+                android:hint="Consultant Hour " />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            app:boxStrokeColor="@color/black"
+            android:layout_marginHorizontal="15dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/etbehaviors"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:drawablePadding="18dp"
+                android:textSize="20sp"
+                android:drawableRight="@drawable/addiction"
+                android:hint="Unhealthy Behaviors" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -110,14 +147,14 @@
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/etissue"
+                android:id="@+id/etstatement"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:drawablePadding="18dp"
                 android:textSize="20sp"
-                android:drawableStart="@drawable/issue"
-                android:hint="  Issues" />
+                android:drawableRight="@drawable/medical"
+                android:hint="Description" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
@@ -127,10 +164,8 @@
             android:layout_marginHorizontal="50dp"
             android:backgroundTint="#0C0C01"
             android:textSize="25sp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="10dp"
             android:textColor="@color/white"
             android:text=" Submit" />
-
-
     </LinearLayout>
 </ScrollView>

@@ -17,7 +17,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="65sp"
-            android:text="𝐔𝐬𝐞𝐫 Review"
+            android:text="Health Report"
             android:textAlignment="center"
             android:textSize="40sp"
             android:textColor="@color/black"
@@ -33,15 +33,15 @@
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/etCustomerName"
+                android:id="@+id/etreporttile"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:drawablePadding="18dp"
                 android:textSize="20sp"
                 android:inputType="text"
-                android:drawableStart="@drawable/blackuser"
-                android:hint="Customer Name" />
+                android:drawableStart="@drawable/title"
+                android:hint="Report Title" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -53,15 +53,15 @@
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/etFeedbackTitle"
+                android:id="@+id/etreportdescription"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:drawablePadding="18dp"
                 android:textSize="20sp"
                 android:inputType="text"
-                android:hint="Feedback Title "
-                android:drawableLeft="@drawable/feedbacktitle" />
+                android:hint="Report Description"
+                android:drawableLeft="@drawable/medical" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -73,15 +73,15 @@
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/etFeedbackDescription"
+                android:id="@+id/etSpecialistName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:drawablePadding="18dp"
                 android:textSize="20sp"
-                android:drawableStart="@drawable/feedbackdescription"
+                android:drawableStart="@drawable/doctor"
                 android:inputType="text"
-                android:hint="Feedback Description" />
+                android:hint="Specialist Name" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button

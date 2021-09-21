@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:background="#31BC37"
+    android:background="#69AE19"
     android:layout_height="match_parent"
     tools:context=".UpdateAppointmentActivity">
 
@@ -17,7 +17,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="65sp"
-            android:text="𝐀𝐩𝐩𝐨𝐢𝐧𝐭𝐦𝐞𝐧𝐭 update "
+            android:text="ᴬᵖᵖᵒⁱⁿᵗᵐᵉⁿᵗ ᵘᵖᵈᵃᵗᵉ"
             android:textAlignment="center"
             android:textSize="40sp"
             android:textColor="@color/black"

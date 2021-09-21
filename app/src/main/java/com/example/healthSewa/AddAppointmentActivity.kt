@@ -13,11 +13,8 @@ import kotlinx.coroutines.withContext
 import java.lang.Exception
 
 class AddAppointmentActivity : AppCompatActivity()
-//    ,SensorEventListener
-{
 
-//    private lateinit var sensorManager:SensorManager
-//    private lateinit var LightSensor:Sensor
+{
 
     private lateinit var ethealthissue: EditText
     private lateinit var etoccupation: EditText

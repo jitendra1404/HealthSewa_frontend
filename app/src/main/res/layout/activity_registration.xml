@@ -56,7 +56,7 @@
                 android:id="@+id/edGender"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:drawableStart="@drawable/useraddress"
+                android:drawableStart="@drawable/genders"
                 android:drawablePadding="18dp"
                 android:ems="10"
                 android:hint="Gender "
@@ -75,7 +75,7 @@
             android:id="@+id/edAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:drawableStart="@drawable/useraddress"
+            android:drawableStart="@drawable/locations"
             android:drawablePadding="18dp"
             android:ems="10"
             android:hint="Address "
@@ -157,7 +157,6 @@
         android:layout_marginTop="5dp"
         android:textColor="@color/white"
         android:text=" Sign Up" />
-
 
     </LinearLayout>
 

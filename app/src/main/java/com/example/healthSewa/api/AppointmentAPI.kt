@@ -38,12 +38,5 @@ interface AppointmentAPI {
         @Body appointment: Appointment
     ): Response<UpdateAppointment>
 
-//    //upload image
-//    @Multipart
-//    @PUT("donor/{id}/photo")
-//    suspend fun uploadImage(
-//        @Header("Authorization") token: String,
-//        @Path("id") id: String,
-//        @Part file: MultipartBody.Part
-//    ): Response<ImageResponse>
+
 }

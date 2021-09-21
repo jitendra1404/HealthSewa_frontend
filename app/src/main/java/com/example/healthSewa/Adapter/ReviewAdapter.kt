@@ -25,16 +25,16 @@ class ReviewAdapter (
 
     class ReviewViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         //        val profile: ImageView
-        val feedback_title: TextView
-        val feedback_description: TextView
-        val customer_name: TextView
+        val report_title: TextView
+        val report_description: TextView
+        val specialist_name: TextView
         val delete: ImageButton
 
         init {
-//            profile=view.findViewById(R.id.profile)
-            feedback_title = view.findViewById(R.id.tvFeedbackTitle)
-            feedback_description= view.findViewById(R.id.tvFeedbackDescription)
-            customer_name= view.findViewById(R.id.tvCustomerName)
+
+            report_title = view.findViewById(R.id.tvReportTitle)
+            report_description= view.findViewById(R.id.tvReportDescription)
+            specialist_name= view.findViewById(R.id.tvSpecialistName)
             delete = view.findViewById(R.id.btnDelete)
         }
     }
@@ -47,15 +47,15 @@ class ReviewAdapter (
 
     override fun onBindViewHolder(holder: ReviewViewHolder, position: Int) {
         val review = lstReview[position]
-        holder.feedback_title.text = review.report_title
-        holder.feedback_description.text = review.report_description
-        holder.customer_name.text = review.customer_name
+        holder.report_title.text = review.Report_title
+        holder.report_description.text = review.Report_description
+        holder.specialist_name.text = review.Specialist_name
 
 
         holder.delete.setOnClickListener {
             val builder = AlertDialog.Builder(context)
-            builder.setTitle("Delete ${review.report_title}")
-            builder.setMessage("Are you sure do you want to delete ${review.report_title} ??")
+            builder.setTitle("Delete ${review.Report_title}")
+            builder.setMessage("Are you sure do you want to delete ${review.Report_title} ??")
             builder.setIcon(android.R.drawable.ic_dialog_alert)
             builder.setPositiveButton("Yes") { _, _ ->
                 deleteReview(review)
@@ -75,7 +75,7 @@ class ReviewAdapter (
             withContext(Dispatchers.Main) {
                 Toast.makeText(
                     context,
-                    "${review.report_title} deleted successfully",
+                    "${review.Report_title} deleted successfully",
                     Toast.LENGTH_SHORT
                 ).show()
             }

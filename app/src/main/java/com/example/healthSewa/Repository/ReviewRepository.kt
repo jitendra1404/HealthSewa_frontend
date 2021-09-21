@@ -41,14 +41,4 @@ class ReviewRepository:MyAPIRequest() {
         }
     }
 
-//    //upload image
-//    suspend fun uploadImage(id: String,body: MultipartBody.Part)
-//            : ImageResponse {
-//        return apiRequest {
-//            DonorAPI.uploadImage(ServiceBuilder.token!!,id,body)
-//        }
-//    }
-//}
-
-
 }

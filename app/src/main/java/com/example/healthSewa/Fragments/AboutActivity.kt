@@ -32,7 +32,7 @@ class AboutActivity : Fragment() {
         logout=view.findViewById(R.id.logout)
         WebSite=view.findViewById(R.id.WebSite)
 
-        WebSite.loadUrl("https://laptopsalesrepair.com/")
+        WebSite.loadUrl("https://npcs.org.np/")
 
 //        WebSite.loadUrl("http://10.0.2.2:/")
 
